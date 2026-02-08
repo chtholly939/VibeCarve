@@ -1809,3 +1809,44 @@ textarea.form-input {
     align-self: flex-end;
   }
 }
+
+@media (max-width: 600px) {
+
+  .cart-item {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .cart-right {
+    max-width: 110px;
+    flex-shrink: 0;
+  }
+
+  .qty-controls {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .qty-btn {
+    min-width: 26px;
+    min-height: 26px;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  .qty-number {
+    min-width: 18px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .remove-btn {
+    max-width: 100%;
+    white-space: nowrap;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
