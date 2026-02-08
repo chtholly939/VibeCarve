@@ -1740,3 +1740,72 @@ textarea.form-input {
   }
 
 }
+
+@media (max-width: 600px) {
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .cart-left {
+    flex: 0 0 64px;
+  }
+
+  .cart-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+  }
+
+  .cart-middle {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .cart-middle h3 {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .cart-price {
+    font-size: 13px;
+  }
+
+  .cart-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: 12px;
+  }
+
+  .qty-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .qty-number {
+    font-size: 14px;
+    min-width: 16px;
+    text-align: center;
+  }
+
+  .remove-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    align-self: flex-end;
+  }
+}
