@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auro crafts | Sculptures Online Shop</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Awesome Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <!-- navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- logo -->
+      <a href="index.html" class="logo-img">
+        <img src="images/logo.png" alt="Auro crafts">
+      </a>
+
+        <nav class="nav-links" id="navLinks">
+
+          <span class="close-icon" id="closeMenu"><i class="fa-solid fa-xmark"></i></span>
+
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="shop.html">Shop</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="shop.html" class="nav-icon" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="login.html" class="nav-icon" title="Login"><i class="fa-regular fa-user"></i></a>
+          <a href="cart.html" class="nav-icon cart-icon" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="cartCount">0</span></a>
+        </div>
+
+        <span class="menu-icon" id="openMenu"><i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
+
+  <!-- hero-section -->
+  <section class="hero section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="badge">Handcrafted • Premium • Minimal</span>
+        <h1 >Scluptures That Match Your Vibe</h1>
+        <p>
+          Discover calm, aesthetic scluptures designed to elevate your space.
+          Minimal preview here  >>>  full collections inside Shop & Gallery.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="shop.html" class="btn btn-primary">Explore Shop</a>
+          <a href="gallery.html" class="btn btn-outline">View Gallerry</a>
+        </div>
+
+        <div class="hero-card">
+          <div class="card highlight">
+            <h3>New Arrivals</h3>
+            <p>Fresh designs added weekly.</p>
+            <a href="shop.html" class="mini-link">Browse <i class="fa-solid fa-arrow-right"></i></a>
+          </div> 
+
+          <div class="card highlight">
+            <h3>Custom Orders</h3>
+            <p>Want a sclupture made for you?</p>
+            <a href="contact.html" class="mini-link">Request <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/herosection.png" alt="VibeCarve Image" class="hero-cutout">
+    </div>
+  </section>
+
+
+  <!-- about-preview-section -->
+  <section class="section section-soft">
+  <div class="container split about-preview">
+
+    <div>
+      <h2>About VibeCarve</h2>
+      <p class="muted">
+        We design premium sculptures with a modern, calm aesthetic. Simple goal:
+        make your space look expensive.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>What we offer</h3>
+      <ul class="list">
+        <li>✔ Minimal decor sculptures</li>
+        <li>✔ Marble-look & resin pieces</li>
+        <li>✔ Gift-ready packaging</li>
+        <li>✔ Custom handmade orders</li>
+      </ul>
+    </div>
+
+    <div class="container about-btn-center">
+    <a href="about.html" class="btn btn-primary">Read More</a>
+  </div>
+
+  </div>
+  
+</section>
+
+   <!-- shop-preview-section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Shop Preview</h2>
+        <p class="muted">Small preview only. Full products are on the Shop page.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card product">
+          <div class="product-img">
+            <img src="images/statue2.jpg" alt="">
+          </div>
+          <h3>Abstract Bust</h3>
+          <p class="muted">Minimal desk decor.</p>
+          <!-- <p class="price">₹799</p> -->
+        </div>
+
+        <div class="card product">
+          <div class="product-img">
+            <img src="images/decor2.jpg" alt="">
+          </div>
+          <h3>Classic Vase</h3>
+          <p class="muted">Soft matte finish.</p>
+          <!-- <p class="price">₹999</p> -->
+        </div>
+
+        <div class="card product">
+          <div class="product-img">
+            <img src="images/wall2.jpg" alt="">
+          </div>
+          <h3>Stone Wave</h3>
+          <p class="muted">Luxury shelf piece.</p>
+          <!-- <p class="price">₹1299</p> -->
+        </div>
+      </div>
+
+      <div class="center-btn">
+        <a href="shop.html" class="btn btn-outline">Go to Shop</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery-preview-section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p class="muted">A quick look at our best pieces. View more in the Gallery page.</p>
+      </div>
+
+      <ul class="gallery-list">
+        <li class="gallery-item">
+          <img src="images/image1.jpg" alt="Sculpture Gallery 1" class="gallery-image">
+        </li>
+        <li class="gallery-item">
+          <img src="images/image2.jpg" alt="Sculpture Gallery 2" class="gallery-image">
+        </li>
+        <li class="gallery-item">
+          <img src="images/image3.jpg" alt="Sculpture Gallery 3" class="gallery-image">
+        </li>
+        <li class="gallery-item">
+          <img src="images/image4.jpg" alt="Sculpture Gallery 4" class="gallery-image">
+        </li>
+        <li class="gallery-item">
+          <img src="images/image5.jpg" alt="Sculpture Gallery 5" class="gallery-image">
+        </li>
+        <li class="gallery-item">
+          <img src="images/image6.jpg" alt="Sculpture Gallery 6" class="gallery-image">
+        </li>
+      </ul>
+
+      <div class="center-btn">
+        <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact-preview-section -->
+  <section class="section">
+  <div class="container split contact-preview">
+    <div>
+      <h2>Let's talk</h2>
+      <p class="muted">
+        Questions, custom orders, bulk gifting, collaborations —
+        we're one message away <i class="fa-regular fa-envelope"></i>
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>Quick Info</h3>
+      <p class="muted"><i class="fa-solid fa-location-crosshairs"></i> Shipping across India</p>
+      <p class="muted"><i class="fa-solid fa-clock"></i> Dispatch in 2-5 days</p>
+      <p class="muted"><i class="fa-solid fa-gift"></i> Gift packaging available</p>
+    </div>
+
+    <div class="center-btn">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+  </div>
+  </section>
+
+  <!-- fotter-section -->
+  <footer class="footer-section">
+    <div class="section-content">
+    <p class="copyright-text"><i class="fa-regular fa-copyright"></i> 2026 Scluptures Shop</p>
+
+      <div class="social-link-list">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <!-- <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a> -->
+        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <p class="policy-text">
+        <a href="#" class="policy-link">Privacy Policy</a>
+        <span class="seperator">•</span>
+        <a href="#" class="policy-link">Refund Policy</a>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

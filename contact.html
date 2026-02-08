@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCarve | Sculptures Online Shop</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Awesome Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <!-- navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- logo -->
+      <a href="index.html" class="logo-img">
+        <img src="images/logo.png" alt="VibeCarve">
+      </a>
+
+        <nav class="nav-links" id="navLinks">
+
+          <span class="close-icon" id="closeMenu"><i class="fa-solid fa-xmark"></i></span>
+
+          <a href="index.html" >Home</a>
+          <a href="about.html">About Us</a>
+          <a href="shop.html">Shop</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="shop.html" class="nav-icon" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="login.html" class="nav-icon" title="Login"><i class="fa-regular fa-user"></i></a>
+          <a href="cart.html" class="nav-icon cart-icon" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="cartCount">0</span></a>
+        </div>
+
+        <span class="menu-icon" id="openMenu"><i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
+
+  <!-- main -->
+  <section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="section-content">
+      <ul class="contact-info-list">
+        <li class="contact-info">
+          <i class="fa-solid fa-location-crosshairs"></i>
+            <p>Kadugodi, Bengaluru, Karnataka-560067</p>
+        </li>
+        <li class="contact-info">
+          <i class="fa-regular fa-envelope"></i>
+            <p>info@VibeCarveOfficial.com</p>
+        </li>
+        <li class="contact-info">
+          <i class="fa-solid fa-phone"></i>
+            <p>9876543210</p>
+        </li>
+        <li class="contact-info">
+          <i class="fa-regular fa-clock"></i>
+            <p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+        </li>
+        <li class="contact-info">
+          <i class="fa-regular fa-clock"></i>
+            <p>Saturday & Sunday: 10:00 AM - 10:00 PM</p>
+        </li>
+        <li class="contact-info">
+          <i class="fa-solid fa-globe"></i>
+            <p>www.VibeCarve.in</p>
+        </li>
+      </ul>
+
+      <form id="contactForm" action="https://formspree.io/f/xgokwlkn" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+        <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+        <textarea name="message" placeholder="Your Message" class="form-input" required></textarea>
+
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="section-content">
+    <p class="copyright-text"><i class="fa-regular fa-copyright"></i> 2026 Scluptures Shop</p>
+
+      <div class="social-link-list">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <!-- <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a> -->
+        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <p class="policy-text">
+        <a href="#" class="policy-link">Privacy Policy</a>
+        <span class="seperator">•</span>
+        <a href="#" class="policy-link">Refund Policy</a>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

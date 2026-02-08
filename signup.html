@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCarve | Sculptures Online Shop</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Awesome Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <!-- navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- logo -->
+      <a href="index.html" class="logo-img">
+        <img src="images/logo.png" alt="VibeCarve">
+      </a>
+
+        <nav class="nav-links" id="navLinks">
+
+          <span class="close-icon" id="closeMenu"><i class="fa-solid fa-xmark"></i></span>
+
+          <a href="index.html" >Home</a>
+          <a href="about.html">About Us</a>
+          <a href="shop.html">Shop</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="shop.html" class="nav-icon" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="login.html" class="nav-icon" title="Login"><i class="fa-regular fa-user"></i></a>
+          <a href="cart.html" class="nav-icon cart-icon" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="cartCount">0</span></a>
+        </div>
+
+        <span class="menu-icon" id="openMenu"><i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
+
+  <!-- main -->
+ <section class="section login-section">
+    <div class="login-container">
+
+      <div class="login-card">
+        <h2>Create Account </h2>
+        <p class="muted">Join VibeCarve and start shopping premium sculptures.</p>
+
+        <form id="signupForm" class="login-form">
+
+          <!-- Name -->
+          <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+
+          <!-- Email -->
+          <div class="input-box">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+
+          <!-- Password -->
+          <div class="input-box">
+            <label>Password</label>
+            <div class="password-box">
+              <input type="password" id="password" placeholder="Create a password" required>
+              <i class="fa-solid fa-eye" id="togglePassword"></i>
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="input-box">
+            <label>Confirm Password</label>
+            <div class="password-box">
+              <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+              <i class="fa-solid fa-eye" id="toggleConfirmPassword"></i>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary login-btn">Sign Up</button>
+
+          <p class="signup-text">
+            Already have an account?
+            <a href="login.html">Login</a>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="section-content">
+    <p class="copyright-text"><i class="fa-regular fa-copyright"></i> 2026 Scluptures Shop</p>
+
+      <div class="social-link-list">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <!-- <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a> -->
+        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <p class="policy-text">
+        <a href="#" class="policy-link">Privacy Policy</a>
+        <span class="seperator">•</span>
+        <a href="#" class="policy-link">Refund Policy</a>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+  <script src="signup.js" defer></script>
+</body>
+</html>

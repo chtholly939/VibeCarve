@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCarve | Sculptures Online Shop</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Awesome Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <!-- navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- logo -->
+      <a href="index.html" class="logo-img">
+        <img src="images/logo.png" alt="VibeCarve">
+      </a>
+
+        <nav class="nav-links" id="navLinks">
+
+          <span class="close-icon" id="closeMenu"><i class="fa-solid fa-xmark"></i></span>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="shop.html" class="nav-icon" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="login.html" class="nav-icon" title="Login"><i class="fa-regular fa-user"></i></a>
+          <a href="cart.html" class="nav-icon cart-icon" title="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="cartCount">0</span></a>
+        </div>
+
+        <span class="menu-icon" id="openMenu"><i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
+    <!-- ================= SHOP HERO ================= -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>Shop</h2>
+        <p class="muted">Browse our premium sculptures and decor pieces.</p>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="shop-controls">
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search sculptures...">
+        </div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active-filter" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="statue">Statues</button>
+          <button class="filter-btn" data-filter="decor">Decor</button>
+          <button class="filter-btn" data-filter="wall">Wall Art</button>
+          <button class="filter-btn" data-filter="gift">Gifts</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCTS ================= -->
+  <section class="section">
+    <div class="container">
+
+      <div class="shop-grid" id="productGrid">
+
+        <!--Product 1 -->
+        <div class="shop-card" data-category="statue" data-name="Fish Statue">
+          <div class="shop-img">
+            <img src="images/statue1.jpg" alt="Abstract Bust">
+          </div>
+
+          <div class="shop-info">
+            <h3>Fish Statue</h3>
+            <p class="muted">Minimal desk sculpture • Matte finish</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹799</span>
+              <button class="add-cart-btn"
+                data-id="1"
+                data-name="Fish Statue"
+                data-price="799"
+                data-image="images/statue1.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="shop-card" data-category="decor" data-name="rock weight">
+          <div class="shop-img">
+            <img src="images/decor2.jpg" alt="Stone Wave">
+          </div>
+
+          <div class="shop-info">
+            <h3>Rock weight</h3>
+            <p class="muted">Luxury shelf piece • Premium look</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹1299</span>
+              <button class="add-cart-btn"
+                data-id="2"
+                data-name="Rock weight"
+                data-price="1299"
+                data-image="images/decor2.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="shop-card" data-category="gift" data-name="Mini Sculpture Set">
+          <div class="shop-img">
+            <img src="images/set1.jpg" alt="Mini Sculpture Set">
+          </div>
+
+          <div class="shop-info">
+            <h3>Mini Sculpture Set</h3>
+            <p class="muted">Perfect for gifting • Aesthetic set</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹999</span>
+              <button class="add-cart-btn"
+                data-id="3"
+                data-name="Mini Sculpture Set"
+                data-price="999"
+                data-image="images/set1.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="shop-card" data-category="wall" data-name="Wall Sculpture Frame">
+          <div class="shop-img">
+            <img src="images/wall1.jpg" alt="Wall Sculpture Frame">
+          </div>
+
+          <div class="shop-info">
+            <h3>Wall Sculpture Frame</h3>
+            <p class="muted">Wall decor • Modern handmade</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹1499</span>
+              <button class="add-cart-btn"
+                data-id="4"
+                data-name="Wall Sculpture Frame"
+                data-price="1499"
+                data-image="images/wall1.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="shop-card" data-category="statue" data-name="Abstract Bust">
+          <div class="shop-img">
+            <img src="images/statue2.jpg" alt="Abstract Bust">
+          </div>
+
+          <div class="shop-info">
+            <h3>Abstract Bust</h3>
+            <p class="muted">Minimal desk sculpture • Matte finish</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹799</span>
+              <button class="add-cart-btn"
+                data-id="5"
+                data-name="Abstract Bust"
+                data-price="799"
+                data-image="images/statue2.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="shop-card" data-category="decor" data-name="Stone Wave">
+          <div class="shop-img">
+            <img src="images/decor1.jpg" alt="Stone Wave">
+          </div>
+
+          <div class="shop-info">
+            <h3>Stone Wave</h3>
+            <p class="muted">Luxury shelf piece • Premium look</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹1299</span>
+              <button class="add-cart-btn"
+                data-id="6"
+                data-name="Stone Wave"
+                data-price="1299"
+                data-image="images/decor1.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="shop-card" data-category="gift" data-name="Faces">
+          <div class="shop-img">
+            <img src="images/gift2.jpg" alt="Mini Sculpture Set">
+          </div>
+
+          <div class="shop-info">
+            <h3>Faces</h3>
+            <p class="muted">Perfect for gifting • Aesthetic set</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹999</span>
+              <button class="add-cart-btn"
+                data-id="9"
+                data-name="Faces"
+                data-price="999"
+                data-image="images/gift2.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="shop-card" data-category="wall" data-name="Wall Wave">
+          <div class="shop-img">
+            <img src="images/wall2.jpg" alt="Wall Sculpture Frame">
+          </div>
+
+          <div class="shop-info">
+            <h3>Wall Wave</h3>
+            <p class="muted">Wall decor • Modern handmade</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹1499</span>
+              <button class="add-cart-btn"
+                data-id="8"
+                data-name="Wall Wave"
+                data-price="1499"
+                data-image="images/wall2.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="shop-card" data-category="gift" data-name="Cats">
+          <div class="shop-img">
+            <img src="images/gift7.jpg" alt="Mini Sculpture Set">
+          </div>
+
+          <div class="shop-info">
+            <h3>Cats</h3>
+            <p class="muted">Perfect for gifting • Aesthetic set</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹999</span>
+              <button class="add-cart-btn"
+                data-id="14"
+                data-name="Cats"
+                data-price="999"
+                data-image="images/gift7.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="shop-card" data-category="gift" data-name="Family">
+          <div class="shop-img">
+            <img src="images/gift3.jpg" alt="Mini Sculpture Set">
+          </div>
+
+          <div class="shop-info">
+            <h3>Family</h3>
+            <p class="muted">Perfect for gifting • Aesthetic set</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹999</span>
+              <button class="add-cart-btn"
+                data-id="10"
+                data-name="Family"
+                data-price="999"
+                data-image="images/gift3.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="shop-card" data-category="gift" data-name="Ducks">
+          <div class="shop-img">
+            <img src="images/gift4.jpg" alt="Mini Sculpture Set">
+          </div>
+
+          <div class="shop-info">
+            <h3>Ducks</h3>
+            <p class="muted">Perfect for gifting • Aesthetic set</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹999</span>
+              <button class="add-cart-btn"
+                data-id="11"
+                data-name="Ducks"
+                data-price="999"
+                data-image="images/gift4.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="shop-card" data-category="gift" data-name="Pressure">
+          <div class="shop-img">
+            <img src="images/gift5.jpg" alt="Mini Sculpture Set">
+          </div>
+
+          <div class="shop-info">
+            <h3>Pressure</h3>
+            <p class="muted">Perfect for gifting • Aesthetic set</p>
+
+            <div class="shop-bottom">
+              <span class="shop-price">₹999</span>
+              <button class="add-cart-btn"
+                data-id="12"
+                data-name="Pressure"
+                data-price="999"
+                data-image="images/gift5.jpg">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="section-content">
+    <p class="copyright-text"><i class="fa-regular fa-copyright"></i> 2026 Scluptures Shop</p>
+
+      <div class="social-link-list">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <!-- <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a> -->
+        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <p class="policy-text">
+        <a href="#" class="policy-link">Privacy Policy</a>
+        <span class="seperator">•</span>
+        <a href="#" class="policy-link">Refund Policy</a>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+  <script src="shop.js" defer></script>
+</body>
+</html>
