@@ -87,9 +87,14 @@ document.getElementById("clear-cart-btn").addEventListener("click", () => {
   renderCart();
 });
 
-// Checkout
+// Checkout — redirect to confirmation page
 document.getElementById("checkout-btn").addEventListener("click", () => {
-  alert("Checkout feature coming soon!!");
+  const cart = getCart();
+  if (cart.length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+  window.location.href = "order-confirmation.html";
 });
 
 renderCart();
