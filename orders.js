@@ -96,7 +96,7 @@ function buildOrderCard(order, cardIndex) {
       <!-- Header (click to expand) -->
       <div class="order-header" onclick="toggleCard('${order.id}')">
         <div class="order-meta">
-          <span class="order-id"><i class="fa-regular fa-receipt"></i> ${order.id}</span>
+          <span class="order-id">ORDER-ID: ${order.id}</span>
           <span class="order-date">${order.date} &nbsp;·&nbsp; ${order.items.length} item${order.items.length !== 1 ? "s" : ""}</span>
         </div>
         <div class="order-header-right">
